@@ -1,0 +1,41 @@
+/* Minimal, focused placeholder styles */
+:root{
+  --bg:#0b0b0b;
+  --fg:#e9e5dc;
+  --muted:#bfb8a7;
+  --accent:#b0191e;
+  --stroke:#2a2a2a;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--fg);
+  font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, Helvetica, Arial, Noto Sans, "Apple Color Emoji","Segoe UI Emoji";
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.wrap{max-width:960px;margin:0 auto;padding:2rem}
+.hero{display:grid;place-items:center;text-align:center;padding:1rem 0 0}
+.logo{width:min(58vw,520px);height:auto;filter:drop-shadow(0 8px 30px rgba(0,0,0,.45));margin:1rem auto 0}
+.title{font-weight:800;letter-spacing:.06em;margin:.5rem 0 0;font-size:clamp(2rem,4vw,3rem)}
+.kicker{letter-spacing:.35em;text-indent:.35em;color:var(--muted);margin:.25rem 0 0;font-size:.85rem}
+.tagline{color:var(--muted);margin:.5rem 0 0 0}
+.cta{margin:2.5rem auto 2rem;border:1px solid var(--stroke);padding:1.5rem;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.05));backdrop-filter:saturate(120%) blur(2px);}
+.cta h2{margin:.2rem 0 0}
+.signup{display:flex;gap:.5rem;align-items:center;margin:1rem 0 0;flex-wrap:wrap}
+.signup input{flex:1;min-width:230px;background:#121212;border:1px solid var(--stroke);border-radius:10px;color:var(--fg);padding:.9rem 1rem;font-size:1rem}
+.signup button{background:var(--accent);border:none;color:#fff;padding:.95rem 1.2rem;border-radius:10px;font-weight:700;letter-spacing:.02em;cursor:pointer}
+.signup button:hover{filter:brightness(1.05)}
+.privacy{color:var(--muted);font-size:.9rem;margin:.5rem 0 0}
+.about{margin:2rem 0 3rem}
+.about h3{margin:0 0 .25rem}
+.bullets{padding-left:1.1rem;margin:.3rem 0;color:var(--muted)}
+.foot{display:grid;gap:.5rem;border-top:1px solid var(--stroke);padding-top:1.25rem;margin-top:2rem;color:var(--muted)}
+.social{display:flex;gap:1rem;flex-wrap:wrap}
+.social a{color:var(--muted);text-decoration:none;border-bottom:1px dashed transparent}
+.social a:hover{color:var(--fg);border-bottom-color:var(--fg)}
+.small{font-size:.85rem;margin:0}
+.visually-hidden{position:absolute !important;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;width:1px;overflow:hidden;white-space:nowrap}

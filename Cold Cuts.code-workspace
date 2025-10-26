@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Cold Cuts",
+			"path": ".."
+		},
+		{
+			"name": "theskinman",
+			"path": "../../../../../Documents/GitHub/theskinman"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Cold Cuts"
+	}
+}

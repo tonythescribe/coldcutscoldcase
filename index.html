@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>COLD CUTS — Cold Case Files</title>
+  <meta name="description" content="Cold Cuts: Cold Case Files — a true‑crime series examining unsolved cases with rigor, empathy, and style. Coming soon." />
+  <meta property="og:title" content="COLD CUTS — Cold Case Files" />
+  <meta property="og:description" content="A true‑crime series examining unsolved cases. Join the list for launch updates." />
+  <meta property="og:image" content="assets/cold-cuts-placeholder-logo.png" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preload" href="assets/Graphik-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <img src="assets/cold-cuts-placeholder-logo.png" width="640" height="640" alt="COLD CUTS: Cold Case Files" class="logo"/>
+      <h1 class="title">COLD CUTS</h1>
+      <p class="kicker">COLD CASE FILES</p>
+      <p class="tagline">Unsolved crimes. No cheap thrills. Just the truth.</p>
+    </header>
+
+    <section class="cta">
+      <h2>Get the launch drop</h2>
+      <p>Join the list to be first in line for the pilot, behind‑the‑scenes notes, and case PDFs.</p>
+
+      <!-- If you use Mailchimp, Beehiiv, or ConvertKit, replace the "action" with your form endpoint.
+           For Formspree: set action="https://formspree.io/f/yourId" and keep method="POST". -->
+      <form id="signup" class="signup" action="https://formspree.io/f/your-id" method="POST">
+        <label class="visually-hidden" for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required inputmode="email" autocomplete="email" />
+        <button type="submit">Notify Me</button>
+        <input type="hidden" name="_subject" value="Cold Cuts Mailing List" />
+      </form>
+      <p class="privacy">We’ll email when there’s something worth reading. No spam. Unsubscribe anytime.</p>
+    </section>
+
+    <section class="about">
+      <h3>About the show</h3>
+      <p><strong>Cold Cuts: Cold Case Files</strong> is a narrative true‑crime series focused on rigor over spectacle. Each episode rebuilds the timeline, verifies sources, and separates signal from noise.</p>
+      <ul class="bullets">
+        <li>Short‑form video + podcast companion</li>
+        <li>Original documents and case maps for subscribers</li>
+        <li>Production diary for fellow makers</li>
+      </ul>
+    </section>
+
+    <footer class="foot">
+      <nav class="social">
+        <!-- Replace # with your links -->
+        <a href="#" aria-label="YouTube">YouTube</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="X">X</a>
+        <a href="mailto:tips@yourdomain.com" aria-label="Email">Tips</a>
+      </nav>
+      <p class="small">© <span id="year"></span> Cold Cuts. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
